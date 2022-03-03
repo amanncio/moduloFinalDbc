@@ -1,10 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-
-
 /* header */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c1c1c1;
+}
+
+.logo{
+    border-right: 1px solid black; 
+    padding: 17px 40px;
+    margin-right: 40px;
+}
+
+ul a{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+    color: #000
+}
+
+nav li{
+    margin-right: 30px;
+    display: inline;
+}
+
+nav ul li i{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+nav ul li span{
+    font-size: 12px;
+}
+
+nav li{
+    list-style: none;
+}
+
+.perfil-preview .img-profile{
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+}
+
+.perfil-preview div p{
+    font-size: 12px;
+}
+
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+
+.you{
+    margin-left: 10px;
+    color: #1818189c
+}
+
+.small-profile{
+    display: flex;
+    align-items: center;
+}
+
+.text-green-small{
+    color: green;
+}
+
+.username-align{
+    display: inline-flex;
+}
