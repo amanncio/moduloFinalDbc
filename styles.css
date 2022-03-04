@@ -7,6 +7,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #E5E5E5;
 }
 
 /* header */
@@ -15,6 +16,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .logo{
@@ -140,9 +142,31 @@ input::placeholder {
 }
 
 
-/* CONTEÚDO */
+/* seção principal */
 
-main{
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+}
+
+/* main */
+
+.pricipal-profile img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100px;
+}
+.profile-position{
+    display: flex;
+}
+.position-1 {
+    display:flex;
+    justify-content: space-between;
+}
+
+/* aside */
+.lateral{
     background-color: lightpink;
     height: 100vh;
 }
