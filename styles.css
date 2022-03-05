@@ -501,10 +501,41 @@ input::placeholder {
     margin-right: 15px;
 }
 
+/* education */
 
-
-
-
+.education{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 25px;
+    border-radius: 4px;
+}
+.titulo-educ{
+    margin-bottom: 25px;
+}
+.position-educ{
+    display: flex;
+}
+.position-educ img{
+    margin-right: 15px;
+}
+.conteudo-educ h4{
+    font-size: 14px;
+    color: #181818;
+    margin-bottom: 10px;
+}
+.conteudo-educ p{
+    font-size: 10px;
+    color: #181818;
+}
+.position-p1{
+    margin-bottom: 5px;
+}
+.position-p2{
+    margin-bottom: 10px;
+}
+.position-p3{
+    margin-bottom: 32px;
+}
 
 
 
