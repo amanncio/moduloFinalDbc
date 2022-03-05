@@ -17,6 +17,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: white;
+    margin-bottom: 40px;
 }
 
 .logo{
@@ -79,6 +80,7 @@ form{
 
 input::placeholder {
     font-size: 16px;
+    color: #cecece;
   }
 
 .perfil-preview{
@@ -152,21 +154,139 @@ input::placeholder {
 
 /* main */
 
-.pricipal-profile img{
+.menu-profile{
+    padding: 0 25px;
+    background-color: #fff;
+}
+
+.bg-linkedin{
+    background: url("./images/bg-profile.png");
+    width: 850px;
+    height: 180px;
+    border-radius: 4px 4px 0 0 ;
+}
+
+.icons-bg-linkedin{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+
+.points-bg-linkedin a{
+    background-color: #fff;
+    margin-left: 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #181818;
+}
+
+.icon-update{
+    background-color: #fff;
+    color: #181818;
+    padding: 10px 14px;
+    border-radius: 4px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.icon-points{
+    padding: 10px 17px;
+    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+}
+
+.icon-edit{
+    padding: 10px 10px;
+    box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+}
+
+.icon-edit span{
+    margin-left: 8px;
+}
+
+.image-profile img{
     width: 170px;
     height: 170px;
-    border-radius: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 38px;
+    border: 10px solid #fff;
 }
 .profile-position{
     display: flex;
 }
+
+.mae-position-1{
+    width: 100%;
+    padding: 10px 0 0 25px;
+}
+
 .position-1 {
     display:flex;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
+
+.freelance{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.logo-amarela {
+    width: 50%;
+    display:flex;
+}
+
+.logo-amarela img{
+    height: 16px;
+    margin-top: 4px;
+    margin-left: 8px;
+}
+
+.icone-localizacao{
+    display: flex;
+    padding-top: 4px;
+}
+
+.icone-localizacao img{
+    height: 16px;
+    margin-right: 8px;
+}
+
+.button-contact-info{
+    margin-right: 15px;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    padding: 10px 37px;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-connections{
+    padding: 10px 20px;
+    left: calc(50% - 170px/2 - 100px);
+    border: 1px solid #0077B5;
+    border-radius: 4px;
+    background: #fff;
+    color: #0077B5;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* aside */
 .lateral{
     background-color: lightpink;
     height: 100vh;
+    border-radius: 4px;
 }
