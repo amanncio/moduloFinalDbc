@@ -448,6 +448,58 @@ input::placeholder {
     margin-bottom: 5px;
 }
 
+/* expirience */
+
+.experience{
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 30px 25px;
+    border-radius: 4px;
+}
+.titulo-exp{
+    margin-bottom: 25px;
+}
+.position-freela{
+    display: flex;
+}
+.position-freela img{
+    margin-right: 15px;
+}
+.sub-titulo h4{
+    margin-bottom: 10px;
+}
+.span-self{
+    margin-bottom: 5px;
+}
+.span-inf1{
+    font-size: 10px;
+    color: #181818;
+    margin-right: 10px;
+}
+.span-inf2{
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.486);
+    margin-right: 10px;
+}
+.span-inf3{
+    font-size: 10px;
+    color: #0275B1;
+    margin-right: 10px;
+}
+.span-jun{
+    margin-bottom: 10px;
+}
+.sub-titulo p{
+    font-size: 10px;
+    color: #181818;
+    margin-bottom: 45px;
+}
+.position-uxui{
+    display: flex;
+}
+.position-uxui img{
+    margin-right: 15px;
+}
 
 
 
