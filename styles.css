@@ -35,6 +35,10 @@ ul a{
     justify-content: center;
 }
 
+ul a:hover{
+    color: #0275B1;
+}
+
 nav li{
     display: inline;
 }
@@ -130,6 +134,10 @@ input::placeholder {
     margin-right: 20px;
 }
 
+.other:hover{
+    color: #0275B1;
+}
+
 .linha-vertical-other{
     border: 1px solid #c1c1c133;
     height: 80px;
@@ -150,7 +158,9 @@ input::placeholder {
 .container {
     margin: 0 auto;
     width: 1200px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 850px auto;
+    gap: 40px;
 }
 
 /* SECTION PROFILE */
@@ -190,6 +200,13 @@ input::placeholder {
     padding: 10px 14px;
     border-radius: 4px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all .2s ease-in-out;
+}
+
+.icon-update:hover{
+    transform: scale(1.1);
+    background-color: #0077B5;
+    color: rgba(255, 255, 255, 0.925)
 }
 
 .icon-points{
@@ -197,9 +214,17 @@ input::placeholder {
     box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
 }
 
+.icon-points:hover{
+    background-color: #f1f1f1;
+}
+
 .icon-edit{
     padding: 10px 10px;
     box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
+}
+
+.icon-edit:hover{
+    background-color: #f1f1f1;
 }
 
 .icon-edit i{
@@ -225,7 +250,7 @@ input::placeholder {
 
 .mae-position-1{
     width: 100%;
-    padding: 10px 0 0 25px;
+    padding: 25px 0 0 25px;
 }
 
 .position-1 {
@@ -375,6 +400,11 @@ input::placeholder {
     font-size: 12px;
     text-decoration: none;
     color:#0275B1;
+    transition: all .3s ease-in-out;
+}
+
+.about-text a:hover{
+    font-size: 13px;
 }
 
 
@@ -409,7 +439,8 @@ input::placeholder {
 }
 
 .images-projects img{
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out;
 }
 
 .images-projects h4{
@@ -418,6 +449,11 @@ input::placeholder {
 
 .images-projects div{
     margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.images-projects img:hover{
+    transform: scale(1.1);
 }
 
 .images-projects small{
@@ -428,6 +464,11 @@ input::placeholder {
     text-decoration: none;
     color:#0275B1;
     font-size: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.show-all:hover{
+    font-size: 13px;
 }
 
 
@@ -458,14 +499,35 @@ input::placeholder {
 
 .card1{
     padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card1:hover{
+    transform: scale(1.1);
+    border: 1px solid #0275B1;
 }
 
 .card2{
     padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card2:hover{
+    transform: scale(1.1);
+    border: 1px solid #0275B1;
 }
 
 .card3{
     padding: 15px 20px 15px 20px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card3:hover{
+    transform: scale(1.1);
+    border: 1px solid #0275B1;
 }
 
 .cards-skills span{
@@ -604,10 +666,158 @@ input::placeholder {
 
 
 /* aside */
-.lateral{
-    background-color: lightpink;
-    height: 100vh;
+
+.dashboard{
+    background-color: #fff;
     border-radius: 4px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+
+.your-dash{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.your-dash h5{
+    font-size: 12px;
+}
+
+.your-dash a{
+    color: #0275B1;
+    font-size: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.your-dash a:hover{
+    color: rgba(128, 49, 219, 0.61);
+}
+
+.linha-dash{
+    border-top: 1px solid rgba(204, 204, 204, 0.418);
+}
+
+.dashboard div{
+    margin-bottom: 20px;
+}
+
+.dashboard div span{
+    font-size: 52px;
+    color: #0275B1;
+}
+
+/* VISITORS (ASIDE) */
+
+.visitors{
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+}
+
+.titulo-visitors{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.titulo-visitors H5{
+    font-size: 12px;
+}
+
+.titulo-visitors a{
+    font-size: 12px;
+    color: #0275B1;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.titulo-visitors a:hover{
+    color: rgba(128, 49, 219, 0.61);
+}
+
+.linha-visitors{
+    border-top: 1px solid rgba(204, 204, 204, 0.418);
+    margin-bottom: 20px;
+}
+
+.card-info{
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.card-info img{
+    margin-right: 15px;
+}
+
+.card-info h5{
+    font-size: 13px;
+    margin-bottom: 2px
+}
+
+.card-info small{
+    font-size: 10px;
+}
+
+
+/* COURSES (ASIDE) */
+
+.courses{
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 25px 30px;
+}
+
+.title-courses{
+    margin-bottom: 20px;
+}
+
+.linha-courses{
+    border-top: 1px solid rgba(204, 204, 204, 0.418);
+    margin-bottom: 20px;
+}
+
+.position-courses a{
+    display: flex;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #181818;
+    transition: all .2s ease-in-out;
+}
+
+.position-courses a:hover{
+    color: #0275B1;
+    transform: scale(1.1);
+}
+
+.videos-courses img{
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.position-courses h4{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+
+.position-courses small{
+    font-size: 10px;
+}
+
+.recomendations-courses{
+    text-decoration: none;
+    font-size: 12px;
+    color: #0275B1;
+    transition: all .2s ease-in-out;
+}
+
+.recomendations-courses:hover{
+    font-size: 13px;
 }
 
 
