@@ -7,7 +7,8 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
+    background-color: lightcoral;
+    /* background-color: #F7F9FB */
 }
 
 /* header */
@@ -171,7 +172,7 @@ input::placeholder {
 .icons-bg-linkedin{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 20px 30px;
     align-items: center;
 }
 
@@ -185,7 +186,7 @@ input::placeholder {
 
 .icon-update{
     background-color: #fff;
-    color: #181818;
+    color: #1818186b;
     padding: 10px 14px;
     border-radius: 4px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -201,8 +202,13 @@ input::placeholder {
     box-shadow: 0px 10px 30px rgba(113, 123, 133, 0.05);
 }
 
+.icon-edit i{
+    color: #18181893;
+}
+
 .icon-edit span{
     margin-left: 8px;
+    font-size: 12px;
 }
 
 .image-profile img{
@@ -210,7 +216,7 @@ input::placeholder {
     height: 170px;
     border-radius: 50%;
     position: relative;
-    bottom: 38px;
+    bottom: 32px;
     border: 10px solid #fff;
 }
 .profile-position{
@@ -231,6 +237,10 @@ input::placeholder {
 .freelance{
     text-align: justify;
     margin-bottom: 15px;
+}
+
+.freelance p{
+    font-size: 14px;
 }
 
 .logo-amarela {
@@ -256,11 +266,22 @@ input::placeholder {
 
 .button-contact-info{
     margin-right: 15px;
-    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    background: #0077B5;
+    border: 1px solid #0077B5;
     padding: 10px 37px;
     border-radius: 4px;
     color: #fff;
     cursor: pointer;
+    font-size: 12px;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.726);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.button-contact-info:hover{
+    box-shadow: inset 0 0 0 50px #fff;
+    color: #0275B1;
 }
 
 .button-connections{
@@ -270,6 +291,16 @@ input::placeholder {
     background: #fff;
     color: #0077B5;
     cursor: pointer;
+    font-size: 12px;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.726);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.button-connections:hover{
+    box-shadow: inset 0 0 0 50px #0077B5;
+    color: #fff; 
 }
 
 
@@ -287,6 +318,11 @@ input::placeholder {
     cursor: pointer;
 }
 
+.button-profile:hover{
+    background-color: #0077B5;
+    color: #fff;
+}
+
 .button-active{
     padding: 15px 48px;
     border: 1px solid rgba(204, 204, 204, 0.89);
@@ -295,12 +331,22 @@ input::placeholder {
     cursor: pointer;
 }
 
+.button-active:hover{
+    background-color: #0077B5;
+    color: #fff;
+}
+
 .button-article{
     padding: 15px 78px;
     border: 2px solid rgba(204, 204, 204, 0.89);
     border-radius: 4px;
     background: #fff;
     cursor: pointer;
+}
+
+.button-article:hover{
+    background-color: #0077B5;
+    color: #fff;
 }
 
 .gradient-about{
@@ -402,6 +448,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .card1, .card2, .card3{
@@ -456,50 +503,68 @@ input::placeholder {
     padding: 30px 25px;
     border-radius: 4px;
 }
+
+.linha-experience{
+    border-top: 1px solid rgba(204, 204, 204, 0.418);
+    margin-bottom: 20px;
+}
+
 .titulo-exp{
     margin-bottom: 25px;
 }
+
 .position-freela{
     display: flex;
 }
+
 .position-freela img{
     margin-right: 15px;
 }
+
 .sub-titulo h4{
     margin-bottom: 10px;
 }
+
 .span-self{
     margin-bottom: 5px;
 }
+
 .span-inf1{
     font-size: 10px;
     color: #181818;
     margin-right: 10px;
 }
+
 .span-inf2{
     font-size: 10px;
     color: rgba(0, 0, 0, 0.486);
     margin-right: 10px;
 }
+
 .span-inf3{
     font-size: 10px;
     color: #0275B1;
     margin-right: 10px;
 }
+
 .span-jun{
     margin-bottom: 10px;
 }
+
 .sub-titulo p{
     font-size: 10px;
     color: #181818;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
 }
+
 .position-uxui{
     display: flex;
 }
+
 .position-uxui img{
     margin-right: 15px;
 }
+
 
 /* education */
 
@@ -536,6 +601,8 @@ input::placeholder {
 .position-p3{
     margin-bottom: 32px;
 }
+
+
 /* aside */
 .lateral{
     background-color: lightpink;
@@ -545,9 +612,11 @@ input::placeholder {
 
 
 /* footer */
+
 footer{
     background: linear-gradient(180deg, rgba(241, 244, 248, 0.8) 0%, rgba(241, 244, 248, 0) 100%);
 }
+
 .container-footer{
     margin: 0 auto;
     max-width: 1200px;
@@ -555,38 +624,51 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+.container-footer a:hover{
+    color:#0275B1;
+}
+
 .container-footer div{
     display: flex;
     flex-direction: column;
 }
+
 .container-footer img{
     width: 46px;
     height: 46px;
     margin-bottom: 12px;
 }
+
 .linkedin-azul{
     color: #0077B5;
 }
+
 .navigation h5{
     margin-bottom: 30px;
 }
+
 .navigation a{
     text-decoration: none;
     color: #181818;
     margin-bottom: 15px;
 }
+
 .talent  h5{
     margin-bottom: 30px;
     color: rgba(255, 255, 255, 0);
 }
+
 .talent a{
     text-decoration: none;
     color: #181818;
     margin-bottom: 15px;
 }
+
 .fast h5{
     margin-bottom: 23px;
 }
+
 .button-azul{
     background-color: #0275B1;
     color: white;
@@ -594,27 +676,52 @@ footer{
     padding: 10px 15px;
     border-radius: 4px; 
     margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.726);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
+
+.button-azul:hover{
+    box-shadow: inset 0 0 0 50px #fff;
+    color: #0275B1;
+}
+
 .button-azul span{
     margin-right: 44px;
 }
+
 .button-branco{
     background-color: white;
     color: #0275B1;
     border: 1px solid #0275B1;
     padding: 10px 15px;
     border-radius: 4px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.726);
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
 }
+
+.button-branco:hover {
+    box-shadow: inset 0 0 0 50px #0275B1;
+    color:#fff;
+}
+
 .button-branco span{
     margin-right: 62px;
 }
+
 .language h5{
     margin-bottom: 23px;
 }
+
 .custom-select select{
     padding: 11px 200px 10px 15px;
     border: 1px solid rgba(204, 204, 204, 0.89);
     border-radius: 4px;
-    
+    cursor: pointer;
 } 
 
