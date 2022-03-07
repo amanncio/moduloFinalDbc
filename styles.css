@@ -950,14 +950,15 @@ footer{
   background-color: white;
   padding: 25px 25px;
   margin-bottom: 35px;
+  border-radius: 4px;
 }
-.new-post div span{
+.new-post div h5{
     font-size: 12px;
     margin-bottom: 20px;
 }
 .linha-post{
     margin-bottom: 20px;
-    border: 1px solid #c1c1c133;
+    border-bottom: 1px solid #c1c1c133;
 }
 .form-feed{
     display: flex;
@@ -999,24 +1000,123 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 25px;
 }
 .linha-sort{
     border-bottom: 1px solid black;
-    width: 40%;
+    width: 37%;
 }
+
+.span-sort-by{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.span-sort-by i{
+    color:#0275B1;
+}
+
 .linha-sort span{
     font-size: 12px;
 }
 .azul{
     color: #0275B1;
-    margin-right: 7px;
+    margin-right: 5px;
     margin-left: 5px;
 }
 
+.blue-small{
+    color: #0275B1;
+}
 
+.post1{
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
 
+.post1 i{
+    margin-top: 4px;
+    color: #181818;
+}
 
+.conjunto-small-post{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.post1 small{
+    margin-right: 4px;
+}
+
+.linha-postagem{
+    border-top: 1px solid rgba(204, 204, 204, 0.418);
+}
+
+.conteudo-postagem{
+    padding: 15px 25px 0 25px;
+    margin-bottom: 20px;
+}
+
+.conteudo-postagem p{
+    font-size: 14px;
+    color: #181818;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.conteudo-postagem a{
+    text-decoration: none;
+    color: #0275B1;
+    font-size: 12px;
+    transition: all .3s ease-in-out;
+}
+
+.conteudo-postagem a:hover{
+    font-size: 13px;
+}
+
+.icons-postagem{
+    display: flex;
+    justify-content: space-between;
+    padding-top:18px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.icons-left{
+    display: flex;
+}
+
+.icone-share strong{
+    font-size: 12px;
+    margin-left: 12px;
+    margin-top: 2px;
+}
+
+.left1{
+    margin-right: 20px;
+}
+
+.left1 img{
+    margin-right: 7px;
+}
+
+.left2 img{
+    margin-right: 7px;
+}
+
+.icone-share i{
+    color: #0275B1;
+}
+
+.icone-share{
+    display: flex;
+}
 
 
 
